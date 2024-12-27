@@ -1,0 +1,89 @@
+body{
+  font-family: 'Arial, sans-serif';
+  margin: 0;
+  padding: 20px;
+  background-color: rgb(76, 76, 133);
+}
+h1{
+  text-align: center;
+  color:aliceblue;
+}
+h2{
+  text-align: center;
+  color:rgb(15, 15, 40)
+  font-weight bold;
+  text-transform:uppercase;
+}
+#cinema{
+  max-width:600px;
+  margin: auto;
+  padding: 20px;
+  background-color: antiquewhite;
+  border-radius:5px;
+}
+#Screen{
+  text-align: center;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 30px;
+  height: 30px;
+  width: 80%;
+  margin: auto;
+  background-color: black;
+  color: antiquewhite;
+  border-radius: 10px;
+}
+#seats{
+  display: grid;
+  grid-template-columns: repeat(auto-fit minmax(40px,1fr));
+  gap: 10px;
+}
+.row{
+  display:flex;
+  margin: 1rem 0;
+  justify-content: center;
+}
+.seat{
+  background-color: rgb(194, 190, 190);
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin:0 0.2rem
+}
+.seat-selected{
+  background-color: blue;
+}
+#selected-seats{
+margin-top:20px;
+font-weight: bold;
+}
+#status-message{
+margin-top: 10px;
+text-align: center;
+}
+#btn-reserve{
+  display: block;
+  margin:20px auto;
+  padding: 10px 20px;
+  background-color: rgb(71, 71, 244);
+  color:white;
+  border: none;
+  border-radius:5px;
+  cursor: pointer;
+}
+#btn-reserve:hover{
+  background-color: rgb(9, 9, 69);
+}
+@media screen and (max-width :480px){
+  #cinema{
+    padding: 10px;
+  }
+}
+.seat{
+  width:30px;
+  height: 30px;
+}
+#btn-reserve{
+  padding:8px 16px;
+}
